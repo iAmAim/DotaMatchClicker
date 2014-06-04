@@ -10,7 +10,7 @@ namespace ConsoleApplication2
 {
     class Program
     {
-        static string proc = "OUTLOOK";
+        static string proc = "notepad++"; //"OUTLOOK";
 		
 		[DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
 		static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
@@ -79,9 +79,10 @@ namespace ConsoleApplication2
                 {
                     /* TODO: If process gets an event system alert, focus the process*/
 
+                    hWnd = objProcesses[0].MainWindowHandle;
                     if (ProcessNeedsAttention(hWnd))
                     {
-                        hWnd = objProcesses[0].MainWindowHandle;
+                       
                         ShowWindowAsync(new HandleRef(null, hWnd), SW_RESTORE);
                         SetForegroundWindow(objProcesses[0].MainWindowHandle);
                         processSet = true;
@@ -158,23 +159,36 @@ namespace ConsoleApplication2
 
         }
 
+
         static bool ProcessNeedsAttention(IntPtr hWnd)
         {
             /* if windows is flashing return true */
+            
             FLASHWINFO fInfo = new FLASHWINFO();
             fInfo.hwnd = hWnd;
 
-            if (fInfo.dwFlags == 0) {
-                Console.WriteLine("Focus set to {0}!", proc);
-                return true; 
+            /*
+             http: //stackoverflow.com/questions/9305646/detecting-a-taskbar-icon-flashing
+             */
+            if (fInfo.uCount == 0)
+            {
+                Console.WriteLine("dwFlags = {0}", fInfo.dwFlags);
+                Console.WriteLine("uCount = {0}", fInfo.uCount);
+                Console.WriteLine("fInfo.hwnd = {0}", fInfo.hwnd);
+                Console.WriteLine("hWnd = {0}", hWnd);
+                return true;
             }
             else {
-
-                Console.WriteLine("Focus not set to {0} because there is no flash info recorded.", proc);
+                Console.WriteLine("dwFlags = {0}", fInfo.dwFlags);
+                Console.WriteLine("uCount = {0}", fInfo.uCount);
+                Console.WriteLine("fInfo.hwnd = {0}", fInfo.hwnd);
+                Console.WriteLine("hWnd = {0}", hWnd);
                 return false;
             }
-            
+           
+
         }
+
 
 
         private static WinEventDelegate winEventProc;
