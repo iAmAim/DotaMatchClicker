@@ -1,0 +1,12 @@
+\\euiedufp01.idev.spencerstuart.com\userdata\emartin\visual studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+\\euiedufp01.idev.spencerstuart.com\userdata\emartin\visual studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+\\euiedufp01.idev.spencerstuart.com\userdata\emartin\visual studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ResolveAssemblyReference.cache
+\\euiedufp01.idev.spencerstuart.com\userdata\emartin\visual studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+\\euiedufp01.idev.spencerstuart.com\userdata\emartin\visual studio 2010\Projects\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\..Aim\C#\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\..Aim\C#\ConsoleApplication2\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\obj\x86\Debug\ResolveAssemblyReference.cache

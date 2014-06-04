@@ -1,0 +1,5 @@
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.exe
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\obj\x86\Debug\ConsoleApplication2.pdb
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\..Aim\C#\Process_manipulation\ConsoleApplication2\obj\x86\Debug\FocusAWindow.csprojResolveAssemblyReference.cache
